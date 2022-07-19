@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app download</title>
+    <link rel="stylesheet" href="assets/css/main1.css" />
+</head>
+<body>
+    <!-- <div id="downloadcolor">앱 개발 중입니다.</div> -->
+    <p>'이곳'을<br /> 제작 중입니다.</p>
+    <div id= "animContainer"></div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+<!--Lottie JSON 파일이 들어갈 JS 파일-->
+<script src="/front/js/test_lottie.js"></script>
+<script>  
+    var anmation = bodymovin.loadAnimation({
+    container : document.getElementById('animContainer'),
+    renderer : 'svg',
+    loop : true,
+    autoplay : true,
+    //path: 'https://assets8.lottiefiles.com/packages/lf20_b32f3vtz.json' // 2-1. url
+    path: '93627-location-pop-up.json' // 2-2. 다운받아서 사용.
+    });
+</script>
+</html>
